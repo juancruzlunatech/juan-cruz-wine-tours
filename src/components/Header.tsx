@@ -14,14 +14,16 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-line/80 bg-cream/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <NavLink to="/" className="group flex min-w-0 items-center gap-2.5">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-burgundy text-sm font-bold text-cream">
-            JC
-          </span>
+          <img
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
+            alt="Juan Cruz Wine Tours logo"
+            className="h-11 w-11 shrink-0 rounded-full shadow-sm ring-2 ring-sand-deep/40"
+          />
           <span className="truncate">
-            <span className="font-display block text-lg font-semibold leading-tight tracking-tight text-burgundy group-hover:text-plum">
+            <span className="font-display block text-lg font-semibold leading-tight tracking-tight text-ink group-hover:text-burgundy">
               Juan Cruz Wine Tours
             </span>
-            <span className="block text-[11px] font-medium uppercase tracking-[0.14em] text-muted">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-plum">
               Waiheke Island
             </span>
           </span>
@@ -33,7 +35,7 @@ export function Header() {
               to={l.to}
               end={l.end}
               className={({ isActive }) =>
-                `rounded-full px-3 py-1.5 text-sm font-medium transition ${
+                `rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                   isActive
                     ? 'bg-burgundy text-cream'
                     : 'text-muted hover:bg-sand/80 hover:text-burgundy'
@@ -46,7 +48,7 @@ export function Header() {
         </nav>
         <NavLink
           to="/contact"
-          className="rounded-full bg-burgundy px-4 py-2 text-sm font-semibold text-cream shadow-sm transition hover:bg-burgundy-deep"
+          className="rounded-full bg-burgundy px-4 py-2 text-sm font-bold text-cream shadow-sm transition hover:bg-burgundy-deep"
         >
           Book
         </NavLink>
@@ -58,7 +60,7 @@ export function Header() {
             to={l.to}
             end={l.end}
             className={({ isActive }) =>
-              `whitespace-nowrap rounded-full px-3 py-1 text-xs font-medium ${
+              `whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold ${
                 isActive ? 'bg-burgundy text-cream' : 'bg-sand/50 text-muted'
               }`
             }

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-line bg-burgundy-deep text-cream">
+    <footer className="mt-auto border-t border-line bg-ink text-cream">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-3 sm:px-6">
         <div>
           <p className="font-display text-2xl font-semibold">Juan Cruz Wine Tours</p>

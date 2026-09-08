@@ -1,23 +1,23 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Nunito', system-ui, sans-serif;
 
-  --color-burgundy: #5c1a2e;
-  --color-burgundy-deep: #3d1020;
-  --color-plum: #4a1942;
-  --color-plum-soft: #6b3a62;
-  --color-cream: #f7f1e8;
-  --color-sand: #e8dcc8;
-  --color-sand-deep: #c4a574;
-  --color-gold: #c9a227;
-  --color-ink: #1f1520;
-  --color-muted: #6b5c64;
-  --color-line: #e0d4c4;
-  --color-foam: #faf7f2;
-  --color-ok: #2f6b4f;
-  --color-danger: #b42318;
+  --color-burgundy: #e85d4c;
+  --color-burgundy-deep: #d1493b;
+  --color-plum: #2a9d8f;
+  --color-plum-soft: #3db8a8;
+  --color-cream: #fff8ef;
+  --color-sand: #ffe8c8;
+  --color-sand-deep: #f4a261;
+  --color-gold: #e9c46a;
+  --color-ink: #1d3557;
+  --color-muted: #5a6a7a;
+  --color-line: #f0dcc0;
+  --color-foam: #fffaf4;
+  --color-ok: #2a9d8f;
+  --color-danger: #e63946;
 }
 
 html {
@@ -34,8 +34,9 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   background:
-    radial-gradient(900px 420px at 6% -8%, rgba(92, 26, 46, 0.08), transparent 55%),
-    radial-gradient(700px 380px at 100% 0%, rgba(201, 162, 39, 0.1), transparent 50%),
+    radial-gradient(900px 420px at 8% -10%, rgba(232, 93, 76, 0.14), transparent 55%),
+    radial-gradient(750px 400px at 100% 0%, rgba(42, 157, 143, 0.12), transparent 50%),
+    radial-gradient(600px 320px at 50% 100%, rgba(244, 162, 97, 0.1), transparent 45%),
     var(--color-foam);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
@@ -43,7 +44,7 @@ body {
 }
 
 ::selection {
-  background: rgba(92, 26, 46, 0.22);
+  background: rgba(232, 93, 76, 0.25);
   color: inherit;
 }
 
