@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+
+  --color-burgundy: #5c1a2e;
+  --color-burgundy-deep: #3d1020;
+  --color-plum: #4a1942;
+  --color-plum-soft: #6b3a62;
+  --color-cream: #f7f1e8;
+  --color-sand: #e8dcc8;
+  --color-sand-deep: #c4a574;
+  --color-gold: #c9a227;
+  --color-ink: #1f1520;
+  --color-muted: #6b5c64;
+  --color-line: #e0d4c4;
+  --color-foam: #faf7f2;
+  --color-ok: #2f6b4f;
+  --color-danger: #b42318;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(900px 420px at 6% -8%, rgba(92, 26, 46, 0.08), transparent 55%),
+    radial-gradient(700px 380px at 100% 0%, rgba(201, 162, 39, 0.1), transparent 50%),
+    var(--color-foam);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(92, 26, 46, 0.22);
+  color: inherit;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
